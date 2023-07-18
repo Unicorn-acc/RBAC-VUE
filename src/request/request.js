@@ -42,7 +42,7 @@ http.interceptors.response.use(function (response) {
     Message.error(response.data.msg);
   }
   // token检查有误
-  if (response.data.code == 1001 || response.data.code == 1002 || response.data.code == 1003) {
+  if (response.data.code == 1001 || response.data.code == 1002 || response.data.code == 1003 || response.data.code == 1004) {
     router.push("/login");
     return false;
   }
